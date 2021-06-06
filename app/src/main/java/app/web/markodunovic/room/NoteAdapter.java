@@ -42,6 +42,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         notifyDataSetChanged();
     }
 
+    // this method is for swipe functionality latter on
+    public Note getNoteAt(int position){
+        return notes.get(position);
+    }
+
     class NoteHolder extends RecyclerView.ViewHolder{
 
         private TextView textViewTitle, textViewDescription, textViewPriority;
